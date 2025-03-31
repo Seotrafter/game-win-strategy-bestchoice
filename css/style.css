@@ -1,0 +1,304 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background-color: #111111;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts for Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFD700; /* Gold */
+}
+
+/* Neon Text Effects */
+.neon-text {
+  text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+}
+
+/* Neon Icons */
+.neon-icon {
+  color: #FFD700;
+  margin-right: 8px;
+}
+
+/* Navigation Menu */
+.neon-navbar {
+  background-color: #1A1A1A;
+  border-bottom: 2px solid #FFD700;
+}
+.neon-navbar .nav-link {
+  transition: color 0.3s ease;
+}
+.neon-navbar .nav-link:hover {
+  color: #FFD700;
+}
+
+/* New Background Colors for Sections */
+
+/* Main Block - a cool dark teal gradient */
+.neon-bg {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Custom Background 1 - a vibrant purple gradient */
+.custom-bg-1 {
+  background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/* Custom Background 2 - a fresh green gradient */
+.custom-bg-2 {
+  background: linear-gradient(45deg, #1f4037, #99f2c8);
+}
+
+/* Custom Background 3 - a warm purple-to-orange gradient */
+.custom-bg-3 {
+  background: linear-gradient(45deg, #23074d, #cc5333);
+}
+
+/* Neon Background Effects (for Gallery and Footer) */
+/* Neon BG-2: a deep midnight blue gradient */
+.neon-bg-2 {
+  background: linear-gradient(135deg, #141E30, #243B55);
+}
+
+/* Neon BG-3 remains unchanged for Footer (or update as needed) */
+.neon-bg-3 {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+/* Buttons */
+.btn-outline-light {
+  border: 2px solid #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-outline-light:hover,
+.neon-btn:hover {
+  background-color: #fff;
+  color: #111;
+  box-shadow: 0 0 15px #FFD700;
+}
+.neon-btn {
+  border: 2px solid #FFD700;
+}
+
+/* Section Padding */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Advantages and FAQ Cards */
+.neon-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.neon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #FFD700;
+}
+
+/* Gallery Images */
+.gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #FFD700;
+}
+
+/* Neon Borders for Images */
+.neon-border {
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 10px #FFD700;
+}
+
+/* Stats Block */
+.stats-block {
+  padding: 20px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  background: rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stats-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #FFD700;
+}
+
+/* Animations */
+.animated {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations using utility classes */
+.animated.fadeInDown {
+  animation-name: fadeInDown;
+}
+.animated.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+.animated.fadeInRight {
+  animation-name: fadeInRight;
+}
+.delay-1s {
+  animation-delay: 1s;
+}
+
+/* FAQ Accordion Styling */
+.accordion-button {
+  background-color: #222;
+  color: #FFD700;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #333;
+  color: #FFD700;
+}
+.accordion-body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Footer Links */
+#footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#footer a:hover {
+  color: #FFD700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  #main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+.review-block {
+  background: rgba(255,215,0,0.1);
+  padding: 20px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #FFD700;
+}
+.review-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.review-text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.review-rating {
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 5px;
+}
+.review-name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1000;
+  color: #e0e0e0;
+  font-size: 20px;
+}
+
+.cookie-consent .cookie-content p {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.cookie-consent .cookie-content button {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: 2px solid #FFD700;
+  background: transparent;
+  color: #FFD700;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cookie-consent .cookie-content button:hover {
+  background: #FFD700;
+  color: #111;
+}
+
